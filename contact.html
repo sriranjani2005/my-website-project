@@ -63,6 +63,40 @@
     </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script>
+function submitContactForm(e) {
+  e.preventDefault();
+
+  const url = "https://script.google.com/macros/s/AKfycbzyYmpsPJGIW7Gp0vJkOz3a9ROIeI4N-ED89cySAdnAv34WWP9PdpEkQVb3Zx81ru6RpQ/exec"; // <-- paste your Google Script URL
+
+  const data = {
+    name: document.getElementById("contactName").value,
+    email: document.getElementById("contactEmail").value,
+    phone: document.getElementById("contactPhone").value,
+    message: document.getElementById("contactMessage").value
+  };
+
+  fetch(url, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(() => {
+    document.getElementById("contactMsg").innerText =
+      "Your message has been sent successfully!";
+    document.getElementById("contactForm").reset();
+  })
+  .catch(err => {
+    console.log(err);
+    document.getElementById("contactMsg").innerText =
+      "Something went wrong. Try again!";
+  });
+}
+</script>
+
+<script src="scripts.js"></script>
 </body>
 </html>
