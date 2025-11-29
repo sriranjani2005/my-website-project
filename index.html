@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Editkaro.in - Social media marketing & video editing agency." />
+  <title>Editkaro.in — Video Editing & Social Media Agency</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://placehold.co/32x32?text=E" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Editkaro.in</a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+<div class="marquee">
+  <p>Video Editing • Color Grading • Ads • Reels • Gaming Edits • Cinematic Cuts •</p>
+</div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <h1>We craft <span class="accent-glow">scroll-stopping</span> videos & social campaigns.</h1>
+          <p class="lead">Short form, long form, gaming, football edits, ads, documentary, anime & color grading — crafted to convert.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="portfolio.html">See Portfolio</a>
+            <a class="btn btn-outline" href="contact.html">Get a Quote</a>
+          </div>
+
+          <div class="mail-card">
+            <form id="emailForm" class="inline-form" onsubmit="submitEmailForm(event)">
+              <input id="emailInput" type="email" placeholder="Your email address" required>
+              <button class="btn btn-neon" type="submit">Subscribe</button>
+            </form>
+            <div id="emailMsg" class="form-msg" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <!-- drop your image named img1.png in project folder -->
+          <div class="screen-mock">
+            <img src="img1.jpeg" alt="Featured Video Poster" class="poster">
+            <div class="screen-shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services container">
+      <div class="service-card">
+        <h3>Short Form</h3>
+        <p>Reels, Shorts & TikTok edits tuned for virality.</p>
+      </div>
+      <div class="service-card">
+        <h3>Long Form</h3>
+        <p>YouTube videos, documentaries and storytelling.</p>
+      </div>
+      <div class="service-card">
+        <h3>Color Grading</h3>
+        <p>Cinematic LUTs & mood-driven color pipelines.</p>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <h2 class="section-title">Highlights</h2>
+      <div class="highlight-grid">
+        <article class="highlight">
+          <div class="thumb"><img src="img1.jpeg" alt="Short Form"></div>
+          <h4>Short Form — Music Promo</h4>
+        </article>
+        <article class="highlight">
+          <div class="thumb"><img src="img5.jpeg" alt="Gaming"></div>
+          <h4>Gaming Highlights</h4>
+        </article>
+        <article class="highlight">
+          <div class="thumb"><img src="img6.jpeg" alt="eCommerce"></div>
+          <h4>Product Ads</h4>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">Editkaro.in</a>
+        <p class="muted">Social Media & Video Editing</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <p class="muted">hello@editkaro.in</p>
+        <p class="muted small">© <span id="year"></span> Editkaro.in</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>

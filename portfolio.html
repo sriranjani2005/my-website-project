@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Editkaro.in</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Editkaro.in</a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="section-title">Portfolio</h1>
+      <p class="muted">Click categories to filter. Videos open inline.</p>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-cat="all" onclick="filterCategory('all', this)">All</button>
+        <button class="filter-btn" data-cat="short" onclick="filterCategory('short', this)">Short Form</button>
+        <button class="filter-btn" data-cat="long" onclick="filterCategory('long', this)">Long Form</button>
+        <button class="filter-btn" data-cat="gaming" onclick="filterCategory('gaming', this)">Gaming</button>
+        <button class="filter-btn" data-cat="football" onclick="filterCategory('football', this)">Football</button>
+        <button class="filter-btn" data-cat="ecommerce" onclick="filterCategory('ecommerce', this)">eCommerce</button>
+        <button class="filter-btn" data-cat="doc" onclick="filterCategory('doc', this)">Documentary</button>
+        <button class="filter-btn" data-cat="color" onclick="filterCategory('color', this)">Color Grading</button>
+        <button class="filter-btn" data-cat="anime" onclick="filterCategory('anime', this)">Anime</button>
+        <button class="filter-btn" data-cat="ads" onclick="filterCategory('ads', this)">Ads</button>
+      </div>
+
+      <div id="portfolioGrid" class="portfolio-grid">
+        <div class="portfolio-item" data-cat="short">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/K6asM4qIZw0" title="Short" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>Short Form</h4>
+        </div>
+
+        <div class="portfolio-item" data-cat="long">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/S_bP9kOQrqo" title="Long" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>Long Form</h4>
+        </div>
+
+        <div class="portfolio-item" data-cat="gaming">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/UrwnBsUQLN0" title="Gaming" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>Gaming</h4>
+        </div>
+
+        <div class="portfolio-item" data-cat="football">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/RVRA9qg_jy8" title="Football" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>Football Edits</h4>
+        </div>
+
+        <div class="portfolio-item" data-cat="ecommerce">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/ESDFM7SDYNs" title="eCommerce" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>eCommerce Ad</h4>
+        </div>
+
+        <div class="portfolio-item" data-cat="doc">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/hVYv9ktilQw" title="Documentary" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>Documentary Style</h4>
+        </div>
+
+        <div class="portfolio-item" data-cat="color">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/u2IEDVXPcc8" 
+            title="Color Grade" 
+            allowfullscreen 
+            loading="lazy">
+    </iframe>
+  </div>
+  <h4>Color Grading</h4>
+</div>
+
+
+        <div class="portfolio-item" data-cat="anime">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/xaLnyyLaQIM" title="Anime" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>Anime Edit</h4>
+        </div>
+
+        <div class="portfolio-item" data-cat="ads">
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/FMOH3J7di20" title="Ads" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h4>Ad Campaign</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="index.html">Editkaro.in</a></div>
+      <div><a href="contact.html">Contact</a></div>
+      <div><p class="muted">hello@editkaro.in</p></div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
