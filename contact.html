@@ -26,18 +26,22 @@
     <div class="contact-grid">
 
       <!-- ⭐ NEW WORKING FORM -->
-      <form action="https://formsubmit.co/sriranjanivs@gmail.com" method="POST" class="contact-form">
+      <form id="contactForm" class="contact-form" onsubmit="submitContactForm(event)">
 
-        <input type="hidden" name="_captcha" value="false">
+  <label><input id="contactName" type="text" placeholder="Full name" required></label>
 
-        <label><input name="name" type="text" placeholder="Full name" required></label>
-        <label><input name="email" type="email" placeholder="Email" required></label>
-        <label><input name="phone" type="tel" placeholder="Phone"></label>
-        <label><textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea></label>
+  <label><input id="contactEmail" type="email" placeholder="Email" required></label>
 
-        <button class="btn btn-primary" type="submit">Send Message</button>
+  <label><input id="contactPhone" type="tel" placeholder="Phone"></label>
 
-      </form>
+  <label><textarea id="contactMessage" rows="5" placeholder="Tell us about your project" required></textarea></label>
+
+  <button class="btn btn-primary" type="submit">Send Message</button>
+
+  <p id="contactMsg" class="muted" style="margin-top:10px;"></p>
+
+</form>
+
       <!-- END FORM -->
 
       <aside class="contact-info card">
