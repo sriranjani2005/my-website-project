@@ -1,5 +1,5 @@
 // === CONFIG - set to your Apps Script Web App URL ===
-const APPS_SCRIPT_WEB_APP_URL = "REPLACE_WITH_YOUR_WEB_APP_URL";
+const APPS_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyBP61Gypk4qTVowO3uTHPkEi7LwUEZJVDvG7-IFeAuoJYFskQY8zrOJ2A_dadxzrzp/exec";
 
 // Mobile menu toggle
 document.getElementById('menuBtn')?.addEventListener('click', () => {
